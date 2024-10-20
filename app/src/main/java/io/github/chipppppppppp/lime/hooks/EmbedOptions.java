@@ -168,7 +168,7 @@ public class EmbedOptions implements IHook {
                                         prefs.edit().putString("encoded_js_modify_request", Base64.encodeToString(code.getBytes(), Base64.NO_WRAP)).commit();
                                         Toast.makeText(context.getApplicationContext(), context.getString(R.string.restarting), Toast.LENGTH_SHORT).show();
                                         Process.killProcess(Process.myPid());
-                                        context.startActivity(new Intent().setClassName(Constants.PACKAGE_NAME, "jp.naver.line.android.activity.SplashActivity"));
+                                        context.startActivity(new Intent().setClassName(Constants.PACKAGE_NAME, "jp.naver.lime.android.activity.SplashActivity"));
                                     }
                                 }
                             });
@@ -288,7 +288,7 @@ public class EmbedOptions implements IHook {
                                         prefs.edit().putString("encoded_js_modify_response", Base64.encodeToString(code.getBytes(), Base64.NO_WRAP)).commit();
                                         Toast.makeText(context.getApplicationContext(), context.getString(R.string.restarting), Toast.LENGTH_SHORT).show();
                                         Process.killProcess(Process.myPid());
-                                        context.startActivity(new Intent().setClassName(Constants.PACKAGE_NAME, "jp.naver.line.android.activity.SplashActivity"));
+                                        context.startActivity(new Intent().setClassName(Constants.PACKAGE_NAME, "jp.naver.lime.android.activity.SplashActivity"));
                                     }
                                 }
                             });
@@ -346,7 +346,7 @@ public class EmbedOptions implements IHook {
                                 if (optionChanged) {
                                     Toast.makeText(context.getApplicationContext(), context.getString(R.string.restarting), Toast.LENGTH_SHORT).show();
                                     Process.killProcess(Process.myPid());
-                                    context.startActivity(new Intent().setClassName(Constants.PACKAGE_NAME, "jp.naver.line.android.activity.SplashActivity"));
+                                    context.startActivity(new Intent().setClassName(Constants.PACKAGE_NAME, "jp.naver.lime.android.activity.SplashActivity"));
                                 }
                             }
                         });
