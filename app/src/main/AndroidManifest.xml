@@ -33,7 +33,7 @@
             android:value="true" />
         <meta-data
             android:name="xposedscope"
-            android:value="jp.naver.line.android" />
+            android:value="jp.naver.lime.android" />
 
     </application>
 
