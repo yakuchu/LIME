@@ -13,7 +13,7 @@ public class RemoveIconLabels implements IHook {
         if (!limeOptions.removeIconLabels.checked) return;
 
         XposedBridge.hookAllConstructors(
-                loadPackageParam.classLoader.loadClass("jp.naver.line.android.activity.main.bottomnavigationbar.BottomNavigationBarTextView"),
+                loadPackageParam.classLoader.loadClass("jp.naver.lime.android.activity.main.bottomnavigationbar.BottomNavigationBarTextView"),
                 new XC_MethodHook() {
                     @Override
                     protected void afterHookedMethod(MethodHookParam param) throws Throwable {
