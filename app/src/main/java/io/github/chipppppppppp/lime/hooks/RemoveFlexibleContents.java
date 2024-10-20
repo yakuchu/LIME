@@ -16,7 +16,7 @@ public class RemoveFlexibleContents implements IHook {
     @Override
     public void hook(LimeOptions limeOptions, XC_LoadPackage.LoadPackageParam loadPackageParam) throws Throwable {
         XposedBridge.hookAllMethods(
-                loadPackageParam.classLoader.loadClass("jp.naver.line.android.activity.main.MainActivity"),
+                loadPackageParam.classLoader.loadClass("jp.naver.lime.android.activity.main.MainActivity"),
                 "onResume",
                 new XC_MethodHook() {
                     @Override
