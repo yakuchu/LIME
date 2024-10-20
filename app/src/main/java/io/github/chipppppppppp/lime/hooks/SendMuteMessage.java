@@ -43,7 +43,7 @@ public class SendMuteMessage implements IHook {
                         ListView listView = (ListView) param.thisObject;
                         if (listView.getTag() != null) return;
                         Context context = listView.getContext();
-                        if (!(context instanceof ContextWrapper) || !((ContextWrapper) context).getBaseContext().getClass().getName().equals("jp.naver.line.android.activity.chathistory.ChatHistoryActivity"))
+                        if (!(context instanceof ContextWrapper) || !((ContextWrapper) context).getBaseContext().getClass().getName().equals("jp.naver.lime.android.activity.chathistory.ChatHistoryActivity"))
                             return;
                         if (listView.getChildCount() == 2) {
                             ViewGroup viewGroup0 = (ViewGroup) listView.getChildAt(0);
