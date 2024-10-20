@@ -17,7 +17,7 @@ public class CheckHookTargetVersion implements IHook {
     public void hook(LimeOptions limeOptions, XC_LoadPackage.LoadPackageParam loadPackageParam) throws Throwable {
         if (limeOptions.stopVersionCheck.checked) return;
         XposedBridge.hookAllMethods(
-                loadPackageParam.classLoader.loadClass("jp.naver.line.android.activity.SplashActivity"),
+                loadPackageParam.classLoader.loadClass("jp.naver.lime.android.activity.SplashActivity"),
                 "onCreate",
                 new XC_MethodHook() {
                     @Override
